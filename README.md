@@ -1,7 +1,3 @@
-To run this project:
-
-- `npm install` or `yarn`
-- `npm run dev` or `yarn dev`
 # Full Stack Redux Tree
 
 This project store and present a folder tree. 
