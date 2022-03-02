@@ -8,13 +8,15 @@ export const PrintTree = () => {
   const root = GetRootFromServer();
   return (
     <>
+    <h1>Movies Tree</h1>
     <TreeView
       aria-label="file system navigator"
       defaultCollapseIcon={<ExpandMoreIcon />}
       defaultExpandIcon={<ChevronRightIcon />}
-      sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}>
+      >
         {PrintTreeItem(root)}
     </TreeView>
     </>
   );
 };
+
