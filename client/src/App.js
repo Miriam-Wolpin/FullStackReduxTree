@@ -1,14 +1,9 @@
 import React from "react";
 import { PrintTree } from './containers/printTree'
-import { useSelector, useDispatch } from 'react-redux'
-import { fillTree } from './actions'
-import { connect } from 'react-redux';
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import reducer from './reducers'
-
-
-
+import logo from './style.css'
 
 
 export const App = () => {
@@ -25,6 +20,7 @@ export const App = () => {
   return (
     <>
     <Provider store={store}>
+      <div className="logo"></div>
       <PrintTree/>
     </Provider>
     </>
